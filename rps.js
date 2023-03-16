@@ -40,15 +40,16 @@ const buttons = document.querySelectorAll('.weapon');
 buttons.forEach((button) => {
     
     button.addEventListener('click', () =>{
-        if (playRound(button.id, getComputerChoice()) == 'p1'){
+        let tmp_cpu = getComputerChoice();
+        if (playRound(button.id, tmp_cpu) == 'p1'){
             playerscore_js += 1;
             playerscore.textContent = `You: ${playerscore_js}`;
-            result.textContent = `You win, ${button.id} beats ${pairs[button.id]}`;
+            result.textContent = `You win, ${button.id} beats ${tmp_cpu}`;
         }
-        else if (playRound(button.id, getComputerChoice()) == 'p2'){
+        else if (playRound(button.id, tmp_cpu) == 'p2'){
             cpuscore_js += 1;
             cpuscore.textContent = `CPU: ${cpuscore_js}`;
-            result.textContent = `CPU wins, ${button.id} loses to CPU CHOICE`;
+            result.textContent = `CPU wins, ${button.id} loses to ${tmp_cpu}`;
         }
         else {
             result.textContent = "Tie";
