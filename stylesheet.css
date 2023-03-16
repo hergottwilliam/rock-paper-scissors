@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+
+    background-color: black;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.gamebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+}
+
+#rock,
+#paper,
+#scissors{
+    height: 175px;
+    width: 175px;
+
+    font-weight: 800;
+    font-size: x-large;
+    border-radius: 25px;
+    border-width: 10px;
+}
+
+.instruction{
+    padding-bottom: 40px;
+}
