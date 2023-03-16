@@ -43,13 +43,15 @@ buttons.forEach((button) => {
         if (playRound(button.id, getComputerChoice()) == 'p1'){
             playerscore_js += 1;
             playerscore.textContent = `You: ${playerscore_js}`;
+            result.textContent = `You win, ${button.id} beats ${pairs[button.id]}`;
         }
         else if (playRound(button.id, getComputerChoice()) == 'p2'){
             cpuscore_js += 1;
             cpuscore.textContent = `CPU: ${cpuscore_js}`;
+            result.textContent = `CPU wins, ${button.id} loses to CPU CHOICE`;
         }
-        else{
-            result.textContent = `Tie, ${button.id} ties $`;
+        else {
+            result.textContent = "Tie";
         }
     });
 });
