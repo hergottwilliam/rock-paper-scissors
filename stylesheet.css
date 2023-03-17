@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-    padding: 40px;
+    padding: 30px;
 }
 
 #rock,
@@ -27,5 +27,5 @@
 }
 
 .instruction{
-    padding-bottom: 40px;
+    padding-top: 75px;
 }
