@@ -37,6 +37,7 @@ let cpuscore_js = 0;
 
 const buttons = document.querySelectorAll('.weapon');
 
+// main loop
 buttons.forEach((button) => {
     
     button.addEventListener('click', () =>{

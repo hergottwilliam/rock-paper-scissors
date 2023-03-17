@@ -1,2 +1,2 @@
 # rock-paper-scissors
-We all know rock-paper-scissors. This a human vs CPU version of rock-paper-scissors, that for now will exist within the browser console.
+A simple rock-paper-scissors game against the CPU, with an even simplier UI. first to 5 points wins!
